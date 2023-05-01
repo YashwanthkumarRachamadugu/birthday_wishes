@@ -11,16 +11,36 @@
     * {
         margin: 0;
         padding: 0;
+        /* overflow: hidden; */
+    }
+
+    .container {
+        /* enable text wrap */
+        word-wrap: break-word;
+        width: 100vw;
+        height: 100vh;
+        /* padding: 10%; */
+        margin: 10%;
+        display: flex;
+        /* justify-content: center; */
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
     }
 </style>
 
 <body>
     <div class="container">
         <div class="header">
-            <h1>Today Is Rajesh's Birthday <span><img src="./cake.svg" alt=""></span></h1>
-            <img src="./rajesh.jpg" alt="" id="image">
-            <h2>18 years old</h2>
-            <h3>01.03.2023</h3>
+            <div id="con">
+                <h1>Today Is Rajesh's Birthday</h1><span><img src="./cake.svg" alt=""></span>
+            </div>
+            <div id="image1"><img src="./rajesh.jpg" alt="" id="image1"></div>
+            <div id="image2">
+                <h2>18 years old</h2>
+                <h3>01.03.2023</h3>
+            </div>
         </div>
     </div>
 </body>
